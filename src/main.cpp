@@ -1,11 +1,19 @@
 #include "tracker.h"
+#include <fmt/format.h>
+#include "gviz_printer.h"
 
 int main()
 {
-    Tracker x{5};
-    Tracker y{5};
+    gviz::Printer::init("test.dot");
 
-    Tracker z{x + y};
+    Tracker(x, 5);
+
+    Tracker(y, 6);
+
+    y = x;
+
+
+    // Test x;
 
     return 0;
 }

@@ -49,7 +49,7 @@ TARGET         := $(DESTDIR)/out
 export OBJDIR  := $(CURDIR)/obj
 OBJ            := main.o
 
-LIB            :=
+LIB            := fmt
 
 #------------------------------------------------------------------------------
 all: build
